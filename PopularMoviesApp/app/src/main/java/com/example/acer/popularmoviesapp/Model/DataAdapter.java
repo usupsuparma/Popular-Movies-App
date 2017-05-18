@@ -7,6 +7,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import com.example.acer.popularmoviesapp.R;
 import com.squareup.picasso.Picasso;
@@ -19,20 +22,24 @@ import java.util.List;
  */
 
 public class DataAdapter extends RecyclerView.Adapter<DataAdapter.MovieViewHolder> {
-    private ArrayList<Movie> movies;
+    private List<Movie> movies;
     private int rowLayout;
     private Context context;
 
-    public DataAdapter(List<Movie> movies, int row_layout, Context applicationContext) {
-        this.movies = (ArrayList<Movie>) movies;
-        this.rowLayout = row_layout;
-        this.context = applicationContext;
+    public DataAdapter(List<Movie> movies, int rowLayout, Context context) {
+        this.movies = movies;
+        this.rowLayout = rowLayout;
+        this.context = context;
     }
 
 
     public static class MovieViewHolder extends RecyclerView.ViewHolder {
         ImageView imgView;
         CardView moviesLayout;
+        TextView movieTitle;
+        TextView data;
+        TextView movieDescription;
+        TextView rating;
 
 
 
@@ -49,7 +56,7 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.MovieViewHolde
 
     @Override
     public DataAdapter.MovieViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.row_layout, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.row_layout, parent,false);
         return new MovieViewHolder(view);
     }
 

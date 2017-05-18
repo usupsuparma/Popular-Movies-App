@@ -2,6 +2,7 @@ package com.example.acer.popularmoviesapp;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -34,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
         final RecyclerView recyclerView = (RecyclerView) findViewById(R.id.card_recycler_view);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView.setLayoutManager(new GridLayoutManager(getApplicationContext(),2));
 
 
 
