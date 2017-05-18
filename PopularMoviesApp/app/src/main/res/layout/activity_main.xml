@@ -1,17 +1,14 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<GridView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <GridView
-        android:id="@+id/gv_item"
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/card_recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_centerHorizontal="true"
-        android:columnWidth="100dp"
-        android:gravity="center"
-        android:horizontalSpacing="5dp"
-        android:numColumns="2"
-        android:verticalSpacing="5dp"></GridView>
-</RelativeLayout>
+        android:scrollbars="vertical">
+
+    </android.support.v7.widget.RecyclerView>
+</GridView>
