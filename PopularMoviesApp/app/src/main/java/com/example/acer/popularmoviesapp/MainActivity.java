@@ -27,8 +27,6 @@ import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = MainActivity.class.getSimpleName();
-    public final static String EXTRA_MESSAGE_TITLE = "title";
-    public final static String EXTRA_MESSAGE_RELESE = "relesea";
 
     // api key
     private final static String API_KEY = "4057dc6093c3083b684e9221c6e847fe";
@@ -80,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
                             i.putExtra("date", movies.get(position).getReleaseDate());
 
                             //durasi
-                            i.putExtra("durasi",movies.get(position).getPopularity().toString());
+                            i.putExtra("durasi","120min");
 
                             //ranting
                             i.putExtra("vote", movies.get(position).getVoteAverage().toString());
@@ -92,6 +90,8 @@ public class MainActivity extends AppCompatActivity {
                             i.putExtra("overview", movies.get(position).getOverview());
                             i.putExtra("bg", movies.get(position).getPosterPath());
                             MainActivity.this.startActivity(i);
+
+                            i.putExtra("coba",movies.get(position).getBackdropPath());
 
                         }
                         return false;

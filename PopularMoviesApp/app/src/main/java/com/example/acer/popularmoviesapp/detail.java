@@ -5,15 +5,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.VideoView;
 
 import com.squareup.picasso.Picasso;
 
-import static com.example.acer.popularmoviesapp.MainActivity.EXTRA_MESSAGE_RELESE;
-import static com.example.acer.popularmoviesapp.MainActivity.EXTRA_MESSAGE_TITLE;
+
 
 public class detail extends AppCompatActivity {
     private TextView mTitle, mWaktuRelease,mDurasi,mRanting,mTanda,mDeskripsi;
     private ImageView mBg;
+    private TextView mVideo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +50,10 @@ public class detail extends AppCompatActivity {
         // deskripsi
         mDeskripsi = (TextView) findViewById(R.id.tampil_deskripsi);
         mDeskripsi.setText(getIntent().getStringExtra("overview"));
+
+        // video
+        mVideo = (TextView) findViewById(R.id.tampil_video);
+        mVideo.setText(getIntent().getStringExtra("coba"));
 
     }
 }

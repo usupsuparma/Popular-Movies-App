@@ -12,9 +12,11 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:gravity="center"
         android:background="@color/colorAccentDark"
-        android:hint="Title" />
+        android:gravity="center"
+        android:hint="Title"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#ffffff" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -28,7 +30,7 @@
             android:layout_weight="1"
             android:src="@mipmap/ic_launcher_round" />
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -36,37 +38,42 @@
 
             <TextView
                 android:id="@+id/tampil_tahun"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tampil_durasi"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="end"
                 android:text="Tahun" />
 
             <TextView
                 android:id="@+id/tampil_durasi"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tampil_ranting"
                 android:gravity="center"
                 android:text="durasi" />
 
             <TextView
                 android:id="@+id/tampil_ranting"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
                 android:gravity="center"
-                android:text="Ranting" />
+                android:text="Ranting"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/tampil_tanda"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tampil_ranting"
+                android:gravity="center_horizontal"
                 android:text="tanda" />
 
-        </LinearLayout>
+        </RelativeLayout>
     </LinearLayout>
 
     <TextView
@@ -75,14 +82,17 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:hint="deskripsi" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Thailer"/>
-    <VideoView
+        android:text="Thailers:" />
+
+    <TextView
+        android:id="@+id/tampil_video"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"/>
+        android:layout_weight="1" />
 
 
 </LinearLayout>
