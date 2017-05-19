@@ -10,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.VideoView;
 
 import com.example.acer.popularmoviesapp.R;
 import com.squareup.picasso.Picasso;
@@ -37,16 +38,26 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.MovieViewHolde
         ImageView imgView;
         CardView moviesLayout;
         TextView movieTitle;
-        TextView data;
-        TextView movieDescription;
-        TextView rating;
+        TextView releaseFilm;
+        TextView durasi;
+        TextView ranting;
+        TextView tandaMark;
+        TextView deskripsi;
+        VideoView thailer;
 
 
 
         public MovieViewHolder(View v) {
             super(v);
-            moviesLayout = (CardView) v.findViewById(R.id.movies_layout);
             imgView = (ImageView) v.findViewById(R.id.img_movie);
+            moviesLayout = (CardView) v.findViewById(R.id.movies_layout);
+//            movieTitle = (TextView) v.findViewById(R.id.title);
+//            releaseFilm = (TextView) v.findViewById(R.id.release);
+//            durasi = (TextView) v.findViewById(R.id.durasi);
+//            ranting = (TextView) v.findViewById(R.id.bintang);
+//            tandaMark = (TextView) v.findViewById(R.id.tanda);
+//            deskripsi = (TextView) v.findViewById(R.id.deskripsi);
+//            thailer = (VideoView) v.findViewById(R.id.thailer);
 
 
         }
@@ -62,6 +73,12 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.MovieViewHolde
 
     @Override
     public void onBindViewHolder(MovieViewHolder holder, int position) {
+//        holder.movieTitle.setText(movies.get(position).getTitle());
+//        holder.releaseFilm.setText(movies.get(position).getReleaseDate());
+//        holder.durasi.setText(movies.get(position).getVoteCount().toString());
+//        holder.ranting.setText(movies.get(position).getVoteAverage().toString());
+//        holder.deskripsi.setText(movies.get(position).getOverview());
+//        holder.thailer.setVideoPath(movies.get(position).getVideo().toString());
         Picasso.with(context).load("https://image.tmdb.org/t/p/w300_and_h450_bestv2" + movies.get(position).getBackdropPath()).resize(200, 250).into(holder.imgView);
     }
 

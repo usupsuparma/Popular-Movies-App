@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/poster"
+        android:layout_width="132dp"
+        android:layout_height="154dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:srcCompat="@mipmap/ic_launcher"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="87dp" />
+
+    <TextView
+        android:id="@+id/release"
+        android:layout_width="227dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="152dp"
+        android:gravity="center"
+        android:hint="relis"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_editor_absoluteY="87dp" />
+
+    <TextView
+        android:id="@+id/durasi"
+        android:layout_width="226dp"
+        android:layout_height="31dp"
+        android:layout_marginLeft="152dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:hint="durasi"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/release" />
+
+    <TextView
+        android:id="@+id/bintang"
+        android:layout_width="224dp"
+        android:layout_height="34dp"
+        android:layout_marginLeft="152dp"
+        android:layout_marginTop="12dp"
+        android:hint="bintang"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/durasi" />
+
+    <TextView
+        android:id="@+id/tanda"
+        android:layout_width="224dp"
+        android:layout_height="31dp"
+        android:layout_marginLeft="152dp"
+        android:layout_marginTop="8dp"
+        android:hint="tanda"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bintang" />
+
+    <TextView
+        android:id="@+id/deskripsi"
+        android:layout_width="359dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="4dp"
+        android:hint="deskripsi"
+        app:layout_constraintTop_toBottomOf="@+id/tanda"
+        tools:layout_editor_absoluteX="13dp" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="352dp"
+        android:layout_height="78dp"
+        android:gravity="center"
+        android:hint="title"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <VideoView
+        android:id="@+id/thailer"
+        android:layout_width="354dp"
+        android:layout_height="82dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="356dp" />
+</android.support.constraint.ConstraintLayout>
