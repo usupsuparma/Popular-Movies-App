@@ -1,3 +1,36 @@
 <resources>
-    <string name="app_name">Absensi Digital Online</string>
+    <string name="app_name">Absensi Digital</string>
+
+    //TextView
+    <string name="textview_imei">Imai</string>
+    <string name="textview_nohandphone">No Handphone</string>
+
+
+    //edittext
+    <string name="edittext_nip">NIP</string>
+    <string name="edittext_nama">Name</string>
+    <string name="edittext_alamat">Adress</string>
+    <string name="edittext_jk">Jenis Kelamin</string>
+    <string name="edittext_nohp">No Handphone</string>
+    <string name="edittext_imei">Imei</string>
+
+    // Button
+    <string name="button_in">IN</string>
+    <string name="button_out">OUT</string>
+    <string name="button_save">SAVE</string>
+    <string name="button_signin">Sign in</string>
+    <string name="button_signup">SIGN UP</string>
+
+    //Proggress dialog
+    <string name="progress_dialog_hint">Loading...</string>
+
+    //error message
+    <string name="error_message_NIP">Please Insert Your NIP</string>
+    <string name="error_message_name">Please Insert Your Name</string>
+    <string name="error_message_addres">Please Insert Your addres</string>
+    <string name="error_message_network">Sorry Something error in Netwok</string>
+
+    //hint activity
+    <string name="hint_succes_registred">Success Registered</string>
+    <string name="hint_failed_registred">Success Registered</string>
 </resources>
