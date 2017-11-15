@@ -50,7 +50,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Gender"
+        android:text="@string/edittext_gender"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <RadioGroup
@@ -63,14 +63,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:checked="true"
-            android:text="Male" />
+            android:text="@string/radiobutton_male" />
 
         <RadioButton
             android:id="@+id/radio_button_signup_woman"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Female" />
+            android:text="@string/radiobutton_female" />
     </RadioGroup>
 
     <android.support.design.widget.TextInputLayout

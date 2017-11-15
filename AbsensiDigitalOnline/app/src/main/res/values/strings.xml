@@ -10,9 +10,14 @@
     <string name="edittext_nip">NIP</string>
     <string name="edittext_nama">Name</string>
     <string name="edittext_alamat">Adress</string>
-    <string name="edittext_jk">Jenis Kelamin</string>
+    <string name="edittext_gender">Gender</string>
     <string name="edittext_nohp">No Handphone</string>
     <string name="edittext_imei">Imei</string>
+
+    //radiobutton
+    <string name="radiobutton_male"> Male</string>
+    <string name="radiobutton_female"> Female</string>
+
 
     // Button
     <string name="button_in">IN</string>
@@ -32,5 +37,9 @@
 
     //hint activity
     <string name="hint_succes_registred">Success Registered</string>
-    <string name="hint_failed_registred">Success Registered</string>
+    <string name="hint_failed_registred">Failed Registered</string>
+    <string name="hint_nip">Sorry NIP you input already registered!</string>
+    <string name="hint_nohp_registred">Sorry No hp you input already registered!</string>
+    <string name="hint_imei_registred">Sorry Imei you input already registered!</string>
+    <string name="hint_nip_registred">Sorry NIP you input already registered!</string>
 </resources>
