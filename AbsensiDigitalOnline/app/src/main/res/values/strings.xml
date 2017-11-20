@@ -4,7 +4,7 @@
     //TextView
     <string name="textview_imei">Imei</string>
     <string name="textview_nohandphone">No Handphone</string>
-    <string name="textview_lantitude">Lantitude</string>
+    <string name="textview_lantitude">Latitude</string>
     <string name="textview_longitude">Longitude</string>
 
 
