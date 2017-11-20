@@ -1,9 +1,11 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Absensi Digital</string>
 
     //TextView
-    <string name="textview_imei">Imai</string>
+    <string name="textview_imei">Imei</string>
     <string name="textview_nohandphone">No Handphone</string>
+    <string name="textview_lantitude">Lantitude</string>
+    <string name="textview_longitude">Longitude</string>
 
 
     //edittext
@@ -13,6 +15,8 @@
     <string name="edittext_gender">Gender</string>
     <string name="edittext_nohp">No Handphone</string>
     <string name="edittext_imei">Imei</string>
+    <string name="edittext_email">Email</string>
+    <string name="edittext_email_login">Email or Name</string>
 
     //radiobutton
     <string name="radiobutton_male"> Male</string>
@@ -24,7 +28,8 @@
     <string name="button_out">OUT</string>
     <string name="button_save">SAVE</string>
     <string name="button_signin">Sign in</string>
-    <string name="button_signup">SIGN UP</string>
+    <string name="button_signup">Do not have Account\n Sign Up here!</string>
+    <string name="button_signup_land">Do not  have Account SIGN UP here!</string>
 
     //Proggress dialog
     <string name="progress_dialog_hint">Loading...</string>
@@ -34,6 +39,7 @@
     <string name="error_message_name">Please Insert Your Name</string>
     <string name="error_message_addres">Please Insert Your addres</string>
     <string name="error_message_network">Sorry Something error in Netwok</string>
+    <string name="error_message_email">Please Insert Your Email</string>
 
     //hint activity
     <string name="hint_succes_registred">Success Registered</string>
@@ -42,4 +48,20 @@
     <string name="hint_nohp_registred">Sorry No hp you input already registered!</string>
     <string name="hint_imei_registred">Sorry Imei you input already registered!</string>
     <string name="hint_nip_registred">Sorry NIP you input already registered!</string>
+    <string name="hint_succes_absent">Succes Absent</string>
+    <string name="hint_failed_absent">Failed Absent</string>
+    <string name="hint_succes_login">Sign IN Succes</string>
+    <string name="hint_failed_login">Failed Sign In</string>
+    
+    //spinner list
+    <string-array name="Position">
+        <item>headmaster</item>
+        <item>vice principal</item>
+        <item>the head of the library</item>
+        <item>Teacher</item>
+        <item>Administration</item>
+        <item>Adminsitration Staff</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
 </resources>

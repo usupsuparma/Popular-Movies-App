@@ -49,11 +49,11 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:text="@string/edittext_gender"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <RadioGroup
+
         android:id="@+id/radiogroup_signup_gender"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -78,6 +78,19 @@
         android:layout_height="wrap_content">
 
         <EditText
+            android:id="@+id/edittext_signup_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/edittext_email"
+            android:inputType="textEmailAddress"
+            android:singleLine="true" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
             android:id="@+id/edittext_signup_nohp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -88,8 +101,7 @@
 
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp">
+        android:layout_height="wrap_content">
 
         <EditText
             android:id="@+id/edittext_signup_imei"
