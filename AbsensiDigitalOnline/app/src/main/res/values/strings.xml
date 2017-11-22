@@ -33,6 +33,7 @@
 
     //Proggress dialog
     <string name="progress_dialog_hint">Loading...</string>
+    <string name="progress_dialog_sever_hint">Loading data from server...</string>
 
     //error message
     <string name="error_message_NIP">Please Insert Your NIP</string>
@@ -52,6 +53,8 @@
     <string name="hint_failed_absent">Failed Absent</string>
     <string name="hint_succes_login">Sign IN Succes</string>
     <string name="hint_failed_login">Failed Sign In</string>
+    <string name="hint_succes_validasi">Validation Succes</string>
+    <string name="hint_failed_validasi">Validation Failed</string>
     
     //spinner list
     <string-array name="Position">
