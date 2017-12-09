@@ -1,0 +1,74 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Absensi Digital</string>
+
+    //TextView
+    <string name="textview_imei">Imei</string>
+    <string name="textview_nohandphone">No Handphone</string>
+    <string name="textview_lantitude">Latitude</string>
+    <string name="textview_longitude">Longitude</string>
+
+
+    //edittext
+    <string name="edittext_nip">NIP</string>
+    <string name="edittext_nama">Nama</string>
+    <string name="edittext_alamat">Alamat</string>
+    <string name="edittext_gender">Jenis Kelamin</string>
+    <string name="edittext_nohp">No Handphone</string>
+    <string name="edittext_imei">Imei</string>
+    <string name="edittext_email">Email</string>
+    <string name="edittext_email_login">Email or Name</string>
+
+    //radiobutton
+    <string name="radiobutton_male"> Pria</string>
+    <string name="radiobutton_female"> Perempuan</string>
+
+
+    // Button
+    <string name="button_in">Masuk</string>
+    <string name="button_out">Keluar</string>
+    <string name="button_save">Simpan</string>
+    <string name="button_signin">Sign in</string>
+    <string name="button_signup">Tidak punya akun\n Buat disini!</string>
+    <string name="button_signup_land">Do not  have Account SIGN UP here!</string>
+
+    //Proggress dialog
+    <string name="progress_dialog_hint">Loading...</string>
+    <string name="progress_dialog_sever_hint">Loading data from server...</string>
+
+    //error message
+    <string name="error_message_NIP">Please Insert Your NIP</string>
+    <string name="error_message_name">Please Insert Your Name</string>
+    <string name="error_message_addres">Please Insert Your addres</string>
+    <string name="error_message_network">Sorry Something error in Netwok</string>
+    <string name="error_message_email">Please Insert Your Email</string>
+    <string name="error_network">Terjadi Kesalahan Pada Jaringan</string>
+
+    //hint activity
+    <string name="hint_succes_registred">Sukses Daftar</string>
+    <string name="hint_failed_registred">Gagal Daftar</string>
+    <string name="hint_nip">Maaf NIP yang kamu masukan sudah terdaptar!</string>
+    <string name="hint_nohp_registred">Maaf No handphone yang kamu masukan sudah terdaptar!</string>
+    <string name="hint_imei_registred">Maaf imei yang kamu masukan sudah terdaptar!</string>
+    <string name="hint_nip_registred">Maaf NIP yang kamu masukan sudah terdaptar!</string>
+    <string name="hint_succes_absent">Absensi Berhasil</string>
+    <string name="hint_failed_absent">Absensi Gagal</string>
+    <string name="hint_succes_login">Masuk sukses</string>
+    <string name="hint_failed_login">Masuk Gagal</string>
+    <string name="hint_succes_validasi">Validasi Sukses</string>
+    <string name="hint_failed_validasi">Validasi Gagal</string>
+    <string name="hint_error_gps">Terjadi kesalahan pada GPS!</string>
+    <string name="hint_location_user">Anda diposisi untuk Absensi</string>
+    <string name="hint_location_user_out">Anda diluar posisi untuk absensi</string>
+
+    //spinner list
+    <string-array name="Position">
+        <item>headmaster</item>
+        <item>vice principal</item>
+        <item>the head of the library</item>
+        <item>Teacher</item>
+        <item>Administration</item>
+        <item>Adminsitration Staff</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+</resources>
