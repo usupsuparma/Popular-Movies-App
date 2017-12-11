@@ -41,6 +41,7 @@
     <string name="error_message_addres">Please Insert Your addres</string>
     <string name="error_message_network">Sorry Something error in Netwok</string>
     <string name="error_message_email">Please Insert Your Email</string>
+    <string name="error_network">Network Failed</string>
 
     //hint activity
     <string name="hint_succes_registred">Success Registered</string>
@@ -55,6 +56,9 @@
     <string name="hint_failed_login">Failed Sign In</string>
     <string name="hint_succes_validasi">Validation Succes</string>
     <string name="hint_failed_validasi">Validation Failed</string>
+    <string name="hint_error_gps">Some error from GPS!</string>
+    <string name="hint_location_user">You in Position to Absent</string>
+    <string name="hint_location_user_out">You out from Position to Absent</string>
     
     //spinner list
     <string-array name="Position">
