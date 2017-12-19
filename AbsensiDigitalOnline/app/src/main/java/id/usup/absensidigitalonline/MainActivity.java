@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
     private static final String TAG = "MainActivity";
     private static final int DEVICE_ID_REQUEST = 101;
     private final static int PLAY_SERVICES_RESOLUTION_REQUEST = 1000;
+    private int i ;
 
     private Location mLastLocation;
     private String mNip;
@@ -272,16 +273,23 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
 
     public void getDeviceId() {
         TelephonyManager telephonyManager = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
-        if (ActivityCompat.checkSelfPermission(this, android.Manifest.permission.READ_PHONE_STATE) != PackageManager.PERMISSION_GRANTED) {
+        if (ActivityCompat.checkSelfPermission(this, android.Manifest.permission.READ_PHONE_STATE) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.READ_PHONE_NUMBERS) != PackageManager.PERMISSION_GRANTED) {
 
+            ActivityCompat.requestPermissions(this,
+                    new String[]{Manifest.permission.READ_PHONE_NUMBERS},
+                    DEVICE_ID_REQUEST);
             ActivityCompat.requestPermissions(this,
                     new String[]{android.Manifest.permission.READ_PHONE_STATE},
                     DEVICE_ID_REQUEST);
+
         } else {
 
             assert telephonyManager != null;
             @SuppressLint("HardwareIds") final String deviceId = telephonyManager.getDeviceId();
             @SuppressLint("HardwareIds") final String noPhone = telephonyManager.getLine1Number();
+            final String no= telephonyManager.getSimSerialNumber();
+
+            Log.d(TAG,"no handphone: "+no);
             mImei.setText(deviceId);
             mImei.setKeyListener(null);
             mNoHandphone.setText(noPhone);
@@ -330,6 +338,7 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
     protected void onResume() {
         super.onResume();
         getDeviceId();
+        i=0;
 //        checkPlayServices();
 //        displayLocation();
 
@@ -342,26 +351,16 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
 
     @Override
     public void onBackPressed() {
-        super.onBackPressed();
-        AlertDialog.Builder backComfirm = new AlertDialog.Builder(MainActivity.this);
-        backComfirm.setIcon(android.R.drawable.ic_dialog_alert);
-        backComfirm.setTitle("Notice");
-        backComfirm.setMessage("Do you want Exit? ");
-        backComfirm.setCancelable(false);
-        backComfirm.setPositiveButton("No", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialogInterface, int i) {
-                MainActivity.this.finish();
-            }
-        });
-        backComfirm.setNegativeButton("Yes", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialogInterface, int i) {
-                dialogInterface.cancel();
-            }
-        });
-        AlertDialog check = backComfirm.create();
-        check.show();
+        i++;
+        if (i == 1) {
+            Toast.makeText(MainActivity.this, "Press back once more to Log Out.",
+                    Toast.LENGTH_SHORT).show();
+        } else if(i>1) {
+
+            super.onBackPressed();
+            finish();
+
+        }
 
     }
 

@@ -59,7 +59,7 @@
     <string name="hint_error_gps">Some error from GPS!</string>
     <string name="hint_location_user">You in Position to Absent</string>
     <string name="hint_location_user_out">You out from Position to Absent</string>
-    
+
     //spinner list
     <string-array name="Position">
         <item>headmaster</item>
@@ -71,4 +71,13 @@
         <item>Uranus</item>
         <item>Neptune</item>
     </string-array>
+    <string name="title_activity_main_drawer">MainDrawerActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
