@@ -1,23 +1,29 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="id.usup.absensidigitalonline.MainActivity"
-    tools:showIn="@layout/app_bar_main_drawer">
+    tools:context="id.usup.absensidigitalonline.fragment.MainFragment">
+
+    <android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
         <TextClock
             android:id="@+id/textClock_main"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="28dp"
+            android:layout_marginTop="16dp"
             android:format12Hour="hh:mm:ss a"
             android:gravity="center"
             android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:targetApi="KITKAT" />
@@ -28,12 +34,12 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="16dp"
             android:text="@string/textview_lantitude"
             android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textClock_main" />
+            app:layout_constraintTop_toBottomOf="@+id/textView_jabatan" />
 
         <EditText
             android:id="@+id/textView_main_longitude"
@@ -41,7 +47,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="16dp"
             android:text="@string/textview_longitude"
             android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -52,13 +58,10 @@
             android:id="@+id/textView_main_no_hp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="20dp"
             android:text="@string/edittext_nohp"
             android:textSize="24sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.502"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button_main_refresh_gps" />
 
@@ -68,19 +71,19 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="24dp"
             android:text="@string/textview_imei"
             android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView_main_no_hp" />
+            app:layout_constraintHorizontal_bias="0.477"
+            app:layout_constraintStart_toEndOf="@+id/textView_main_no_hp"
+            app:layout_constraintTop_toTopOf="@+id/textView_main_no_hp" />
 
         <Button
             android:id="@+id/button_main_in"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="64dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="24dp"
             android:background="@drawable/background_round"
             android:paddingLeft="8dp"
             android:paddingRight="8dp"
@@ -88,13 +91,13 @@
             android:textColor="@android:color/white"
             android:textSize="24sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView_main_imei" />
+            app:layout_constraintTop_toBottomOf="@+id/textView_main_no_hp" />
 
         <Button
             android:id="@+id/button_main_out"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="56dp"
+            android:layout_marginEnd="60dp"
             android:layout_marginTop="8dp"
             android:background="@drawable/background_round"
             android:paddingLeft="8dp"
@@ -126,29 +129,27 @@
             android:id="@+id/textView_nama"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
             android:text="Nama"
             android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="@+id/textView_main_lantitude_cek"
-            app:layout_constraintEnd_toStartOf="@+id/textView_main_lantitude_cek"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/textView_main_lantitude_cek" />
+            app:layout_constraintTop_toBottomOf="@+id/textClock_main" />
 
         <TextView
             android:id="@+id/textView_jabatan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
             android:text="Jabatan"
             android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="@+id/textView_main_lantitude_cek"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/textView_main_lantitude_cek"
-            app:layout_constraintTop_toTopOf="@+id/textView_main_lantitude_cek" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_nama" />
+    </android.support.constraint.ConstraintLayout>
 
-
-</android.support.constraint.ConstraintLayout>
+</FrameLayout>
