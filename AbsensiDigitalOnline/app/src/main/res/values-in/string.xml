@@ -1,6 +1,10 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Absensi Digital</string>
 
+    //menu
+    <string name="menu_help">Bantuan</string>
+    <string name="menu_about">Tentang</string>
+
     //TextView
     <string name="textview_imei">Imei</string>
     <string name="textview_nohandphone">No Handphone</string>
@@ -51,14 +55,16 @@
     <string name="hint_imei_registred">Maaf imei yang kamu masukan sudah terdaptar!</string>
     <string name="hint_nip_registred">Maaf NIP yang kamu masukan sudah terdaptar!</string>
     <string name="hint_succes_absent">Absensi Berhasil</string>
+    <string name="hint_succes_absent_out">Absensi Keluar Berhasil</string>
     <string name="hint_failed_absent">Absensi Gagal</string>
     <string name="hint_succes_login">Masuk sukses</string>
     <string name="hint_failed_login">Masuk Gagal</string>
     <string name="hint_succes_validasi">Validasi Sukses</string>
     <string name="hint_failed_validasi">Validasi Gagal</string>
-    <string name="hint_error_gps">Terjadi kesalahan pada GPS!</string>
+    <string name="hint_error_gps">Terjadi kesalahan pada gps!</string>
     <string name="hint_location_user">Anda diposisi untuk Absensi</string>
     <string name="hint_location_user_out">Anda diluar posisi untuk absensi</string>
+    <string name="hint_time_work">Waktu Kerja:</string>
 
     //spinner list
     <string-array name="Position">
@@ -71,4 +77,12 @@
         <item>Uranus</item>
         <item>Neptune</item>
     </string-array>
+
+    <string name="about_hal">Aplikasi absensi Digital ini\n
+                             Digunakan untuk absensi \n pegawai</string>
+    <string name="help_text">
+        1. Untuk Melakukan absensi pastikan anda sudah terdaftar jika anda belum terdaftar  bisa melakukan pendaftaran  kebagian administrasi \n
+        2. pastikan no handphone dan imei sesuai dengan yang didaptarkan \n
+        3. Bila validasi sesuaia maka akan ada nama dan jabatan di tampilan \n
+        4. Tekan tombol absensi masuk dan keluar untuk melakukan  absensi</string>
 </resources>
